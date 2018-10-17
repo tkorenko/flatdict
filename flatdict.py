@@ -26,7 +26,8 @@ class FlatDict(object):
         elif isinstance(obj, list):
             rs = self._process_list_node(prefix, obj)
         else:
-            sys.stderr.write('unhandled object: %s' % (json.dumps(obj, indent=4)))
+            sys.stderr.write('unhandled object: %s' % (json.dumps(obj,
+                                                       indent=4)))
             sys.stderr.write('      its type  : %s' % (type(obj)))
             raise ValueError
 
