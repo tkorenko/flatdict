@@ -35,7 +35,7 @@ class FlatDict(object):
         for elem in rs:
             key = elem.keys()[0]
             val = elem[key]
-            newkey = '{}.{}'.format(prefix, key)
+            newkey = '{0}.{1}'.format(prefix, key)
             upd += [{newkey: elem[key]}]
 
         return upd
